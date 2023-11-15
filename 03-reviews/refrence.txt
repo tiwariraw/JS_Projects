@@ -1,0 +1,5 @@
+Note:
+
+1. Responsiveness of this project is remaining
+2. Explore font awesome:
+https://www.w3schools.com/icons/fontawesome_icons_intro.asp

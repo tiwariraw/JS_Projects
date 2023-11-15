@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+
+:root {
+    --color-primary: #38bdf8;
+    --transition: all 0.3s linear;
+    --spacing: 5px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bruno Ace', cursive;
+    background-color: #f1f5f8;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+nav {
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+
+.links {
+    display: flex;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.links a {
+    color: #475569;
+    text-transform: capitalize;
+    padding: 0 1rem;
+    letter-spacing: var(--spacing);
+    cursor: pointer;
+}
+
+.links a:hover {
+    color: var(--color-primary);
+    transition: var(--transition);
+}
+
+.social-icons a {
+    margin: 0 0.5rem;
+    color: var(--color-primary);
+    opacity: 0.8;
+}
+
+.social-icons a:hover {
+    transition: var(--transition);
+    color: #0284c7;
+    opacity: 1;
+}
+
+/* media queries */
+@media screen and (max-width: 800px) {
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-container {
+        display: inline-block;
+    }
+
+    .links {
+        display: none;
+        margin-top: 1rem;
+    }
+
+    .links li {
+        padding: 0.6rem 0;
+    }
+
+    .show-links {
+        height: 10rem;
+        display: block;
+    }
+
+    .social-icons {
+        display: none;
+    }
+
+    .nav-toggle {
+        font-size: 1.5rem;
+        color: var(--color-primary);
+        background: transparent;
+        border-color: transparent;
+        transition: var(--transition);
+        cursor: pointer;
+
+        position: absolute;
+        top: 18px;
+        right: 12px;
+    }
+
+    .nav-toggle:hover {
+        color: #000;
+    }
+
+}

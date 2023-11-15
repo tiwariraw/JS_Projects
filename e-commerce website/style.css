@@ -1,0 +1,96 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap');
+
+/* Reset */
+* {
+    margin: 0rem;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* variables */
+:root {
+    --primary-color: ;
+    --secondary-color: ;
+    --text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
+    --box-shadow: ;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+    transition: all 0.1s ease-in;
+
+    position: relative;
+}
+
+.hover-link::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: var(--secondary-color);
+
+    position: absolute;
+    right: 0;
+    bottom: -6px;
+
+    transition: all 0.2s ease-in;
+}
+
+.hover-link:hover::after {
+    width: 100%;
+}
+
+/* utility classes */
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.button,
+input[type='submit'] {
+    /* remove all default styles provided to button by the user agent(browser) */
+    all: unset;
+
+    font-family: inherit;
+    padding: 0.8rem 3rem;
+    background-color: #4f46e5;
+    border: 0.5px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button:hover,
+input[type='submit']:hover {
+    background-color: #1e1b4b;
+}
+

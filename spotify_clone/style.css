@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #93c47d;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* nav */
+
+.nav-items {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+
+    padding: 0.5rem;
+    padding-left: 2rem;
+
+    background-color: #242424;
+    color: #fff;
+
+}
+
+img {
+    width: 50px;
+}
+
+.title {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.home,
+.about {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.home:hover,
+.about:hover {
+    color: #93c47d;
+}
+
+/* container / main */
+.container {
+    color: #fff;
+    height: 75vh;
+    padding: 1rem;
+
+    width: 1180px;
+    margin: 1rem auto;
+    border-radius: 6px;
+
+    background-image: url('./bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+}
+
+.container>h1 {
+    letter-spacing: 2px;
+    word-spacing: 8px;
+}
+
+.song-list {
+    margin-top: 3rem;
+}
+
+.song-item {
+    width: 400px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 1.5rem;
+    padding: 0.2rem 1.25rem;
+    border-radius: 2rem;
+
+    background-color: #93c47d;
+}
+
+.song-item>img {
+    width: 42px;
+    border-radius: 50%;
+}
+
+.play {
+    margin-left: 0.7rem;
+    cursor: pointer;
+}
+
+/* bottom */
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    padding: 0.5rem;
+    text-align: center;
+
+    background-color: #242424;
+}
+
+input[type='range'] {
+    width: 800px;
+    height: 2px;
+
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.icons>* {
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+
+.icons {
+    margin-top: 0.3rem;
+    margin-bottom: 0.2rem;
+}
+
+.song-info {
+    color: #fff;
+
+    position: absolute;
+    top: 0px;
+    left: 150px;
+
+    display: flex;
+    align-items: center;
+}
+
+.playing-gif {
+    margin-right: 0.5rem;
+    opacity: 0;
+    transition: 0.3s ease-in;
+}
+
+/* media queries */
+@media screen and (max-width:1200px) {
+    .container {
+        width: 700px;
+        height: 70vh;
+    }
+
+    .container>h1 {
+        font-size: 1.5rem;
+    }
+
+    .song-list {
+        margin-top: 1rem;
+    }
+
+    .song-item {
+        margin-bottom: 1rem;
+    }
+
+    input[type='range'] {
+        width: 600px;
+        margin-top: 2rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .song-info {
+        left: 250px;
+    }
+
+    #master-song-name {
+        margin-top: -0.8rem;
+    }
+}
+
+@media screen and (min-width: 432px) and (max-width: 701px) {
+    .container {
+        width: 430px;
+    }
+
+    input[type='range'] {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:431px) {
+    .container>h1 {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        width: 400px;
+        margin-top: 2.2rem;
+    }
+
+    .song-item {
+        width: 350px;
+        padding: 0.1rem 1.25rem;
+        margin-bottom: 2rem;
+    }
+
+    .song-list {
+        margin-top: 3rem;
+    }
+
+    input[type='range'] {
+        width: 400px;
+        margin-top: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #master-song-name {
+        margin-bottom: 0.7rem;
+    }
+
+    .icons {
+        margin-top: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 391px) {
+    img {
+        width: 40px;
+    }
+
+    .title {
+        font-size: 1.1rem;
+    }
+
+    .container {
+        width: 350px;
+        height: 75vh;
+        margin-top: 2.2rem;
+    }
+
+    .container>h1 {
+        font-size: 1.25rem;
+    }
+
+    .song-list {
+        margin-top: 4rem;
+    }
+
+    .song-item {
+        width: 300px;
+        margin-bottom: 2rem;
+    }
+
+    input[type='range'] {
+        width: 300px;
+    }
+
+    .song-info {
+        left: 80px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .container {
+        height: auto;
+    }
+
+    .container>h1 {
+        font-size: 0.8rem;
+    }
+
+    .song-list {
+        margin-top: 2rem;
+    }
+
+    .song-item {
+        margin-bottom: 1.2rem;
+    }
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - One stop solution for songs</title>
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/2c8a6cb05e.js" crossorigin="anonymous"></script>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+
+    <!-- style -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- script -->
+    <script defer src="./index.js"></script>
+</head>
+
+<body>
+    <!-- nav -->
+    <nav>
+        <ul class="nav-items">
+            <img src="./logo.png" alt="spotify-logo">
+            <li class="title">Spotify</li>
+            <li class="home">Home</li>
+            <li class="about">About</li>
+        </ul>
+    </nav>
+
+    <!-- main -->
+
+    <div class="container">
+        <h1>NCS Hits - No Copyright Sounds</h1>
+        <div class="song-list">
+            <!-- song 1 -->
+            <div class="song-item">
+                <img src="./covers/1.jpg" alt="cover-1">
+                <span class="song-name">Let me love you</span>
+                <span><span class="song-duration">05:34</span><i id="0" class="fa-solid fa-play play"
+                        style="color: white;"></i></span>
+            </div>
+
+            <!-- song 2 -->
+            <div class="song-item">
+                <img src="./covers/2.jpg" alt="cover-1">
+                <span class="song-name">Let me love you</span>
+                <span><span class="song-duration">05:34</span><i id="1" class="fa-solid fa-play play"
+                        style="color: white;"></i></span>
+            </div>
+
+            <!-- song 3 -->
+            <div class="song-item">
+                <img src="./covers/3.jpg" alt="cover-1">
+                <span class="song-name">Let me love you</span>
+                <span><span class="song-duration">05:34</span><i id="2" class="fa-solid fa-play play"
+                        style="color: white;"></i></span>
+            </div>
+
+            <!-- song 4 -->
+            <div class="song-item">
+                <img src="./covers/4.jpg" alt="cover-1">
+                <span class="song-name">Let me love you</span>
+                <span><span class="song-duration">05:34</span><i id="3" class="fa-solid fa-play play"
+                        style="color: white;"></i></span>
+            </div>
+
+            <!-- song 5 -->
+            <div class="song-item">
+                <img src="./covers/5.jpg" alt="cover-1">
+                <span class="song-name">Let me love you</span>
+                <span><span class="song-duration">05:34</span><i id="4" class="fa-solid fa-play play"
+                        style="color: white;"></i></span>
+            </div>
+
+            <!-- song 6 -->
+            <div class="song-item">
+                <img src="./covers/6.jpg" alt="cover-1">
+                <span class="song-name">Let me love you</span>
+                <span><span class="song-duration">05:34</span><i id="5" class="fa-solid fa-play play"
+                        style="color: white;"></i></span>
+            </div>
+        </div>
+        <div class="song-banner">
+
+        </div>
+    </div>
+
+    <!-- bottom song bar -->
+    <div class="bottom">
+        <input type="range" name="range" id="progress-bar" value="0" min="0" max="100">
+        <div class="icons">
+            <i class="fa-solid fa-chevron-left previous-btn" style="color: white; font-size: 24px;"></i>
+            <i id="master-play" class="fa-solid fa-play" style="color: white; font-size: 24px;"></i>
+            <i class="fa-solid fa-chevron-right next-btn" style="color: white; font-size: 24px;"></i>
+        </div>
+        <div class="song-info">
+            <img src="./gif.gif" alt="playing-gif" class="playing-gif">
+            <span id="master-song-name">Warriyo - Mortals</span>
+        </div>
+    </div>
+
+</body>
+
+</html>

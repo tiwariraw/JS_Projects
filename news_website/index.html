@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Magnet</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="nav">
+        <div class="logo" onclick="reload()" style="cursor: pointer;">
+            <img src="./assets/logo.png" alt="logo">
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#" class="nav-item world" onclick="onNavItemClick('world')">World</a></li>
+            <li><a href="#" class="nav-item finance" onclick="onNavItemClick('finance')">Finance</a></li>
+            <li><a href="#" class="nav-item politics" onclick="onNavItemClick('politics')">Politics</a></li>
+        </ul>
+
+        <div class="search-container">
+            <input type="search" name="search-input" class="search-input" placeholder="e.g. cricket ">
+            <button class="search-btn">Search</button>
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <main>
+        <div id="cards-container">
+
+        </div>
+    </main>
+
+    <!-- card template -->
+    <template id="template-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-img" id="news-img">
+            </div>
+            <div class="card-content"">
+                    <h2 class=" news-title" id="news-title">This is the Title</h2>
+                <h5 class="news-source" id="news-source">India Today 30/05/2023</h5>
+                <p class="news-desc" id="news-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ipsa illum libero
+                    sunt. Cumque adipisci obcaecati, sint ipsa itaque dolore. </p>
+            </div>
+        </div>
+    </template>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

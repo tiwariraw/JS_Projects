@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    color: blueviolet;
+}
+
+.search-container {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+input[type='text'] {
+    width: 300px;
+    padding: 0.3rem 1rem;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 2rem;
+}
+
+.card {
+    width: 250px;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 1rem;
+
+    text-align: center;
+}
+
+#image {
+    width: 215px;
+    height: 200px;
+    border-radius: 4px;
+}
+
+#name {
+    color: blueviolet;
+    font-size: 1.5rem;
+}
+
+#bio {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+#name,
+#bio,
+#followers,
+#following {
+    margin: 0.7rem 0;
+}

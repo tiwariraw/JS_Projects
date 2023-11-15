@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+
+:root {
+    --color-primary: #8b5cf6;
+    --transition: all 0.3s linear;
+    --spacing: 5px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bruno Ace', cursive;
+    background-color: #f1f5f8;
+    line-height: 1.5;
+}
+
+/* title */
+.title {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 4rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    letter-spacing: var(--spacing);
+}
+
+.underline {
+    border: 2.3px solid var(--color-primary);
+    width: 6rem;
+}
+
+/* main */
+main {
+    min-height: 100vh;
+    display: grid;
+    /* shorthand for grid property: align-items and justify-items */
+    place-items: center;
+}
+
+.container {
+    width: 80vw;
+    max-width: 620px;
+}
+
+.review {
+    background-color: #fff;
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.review:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#author {
+    text-transform: capitalize;
+    letter-spacing: var(--spacing);
+    word-spacing: 10px;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+#job {
+    color: var(--color-primary);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+}
+
+#info {
+    word-spacing: 10px;
+}
+
+/* button container */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+/* previous and next button */
+.prev-btn,
+.next-btn {
+    color: var(--color-primary);
+    opacity: 0.5;
+    font-size: 1.25rem;
+    background: transparent;
+    border-color: transparent;
+    margin: 0 0.5rem;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    opacity: 1;
+}
+
+/* random button container */
+.random-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* random button */
+.random-btn {
+    padding: 0.6rem;
+    border-radius: 12px;
+    background: transparent;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.random-btn:hover {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+/* img */
+
+.img-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+}
+
+#person-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+}
+
+.img-container::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00c";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    transform: translateY(25%);
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.img-container::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--color-primary);
+    position: absolute;
+    top: -0.25rem;
+    right: -0.5rem;
+    border-radius: 50%;
+}
